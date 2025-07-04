@@ -28,7 +28,7 @@ Une seule version fonctionne sur tous les systèmes (Windows, Mac, Android, iOS�
 - **Scalabilité et Flexibilité** 🏗️
 Une web app peut facilement évoluer, ajouter des fonctionnalités, ou s’adapter à de nouveaux besoins sans contraintes majeures.
 
-# 🧰 🌴 Techonologie ultilisée
+# 🧰 🌴 Techonologies ultilisées
 Nous utilisons le framework Express.JS basée sur l'environnement d'exécution Node.JS pour ce Back-end. 
 Nous avons mis en place un système robuste pour faciliter la communication entre le Front et le Back 
 en toute sécurité avec un système d'authentification lié aux pages d'inscription et de connexion au Front-end, protégeant ainsi toute 
