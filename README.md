@@ -37,7 +37,7 @@ la communauté universitaire – Administration, Agents, Étudiants... de toute 
 Cependant, nous comptons améliorer ce projet afin de le rendre encore plus non-vulnérable en ajoutant le **sucre syntaxique** de l'écosystème __JavaScript__ – ***TypeScript*** 🧩💯 
 pour faciliter ainsi la **maintenance** et surtout rendre possible la **scalabilité** du projet à tout moment.
 
-Nous utilisons ***PostgreSQL*** 📑🧮  comme base de donnée pour stocker et gérer les données. Nous avons opté ce choix connaissant la robustesse et la vitesse d'exéctuctions des queries de **PostgreSQL**.
+Nous utilisons ***PostgreSQL*** 📑🧮  comme base de donnée pour stocker et gérer les données. Nous avons opté ce choix connaissant la robustesse et la vitesse d'exécutions des queries de **PostgreSQL**.
 
 ##  🎋 ፦ Les endpoints des parties d'inscription et de connexion du Back pour permettre aux develeoppeurs frontend de tester et comprendre le fonctionement.
 ### 👨‍🎓 Partie Étudiant
