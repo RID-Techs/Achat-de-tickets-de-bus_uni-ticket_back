@@ -40,7 +40,7 @@ pour faciliter ainsi la **maintenance** et surtout rendre possible la **scalabil
 Nous utilisons ***PostgreSQL*** 📑🧮  comme base de donnée pour stocker et gérer les données. Nous avons opté ce choix connaissant la robustesse et la vitesse d'exécutions des queries de **PostgreSQL**.
 
 ##  🎋 ፦ Les endpoints des parties d'inscription et de connexion du Back pour permettre aux develeoppeurs frontend de tester et comprendre le fonctionement.
-### 👨‍🎓 Partie Étudiant
+### 👨‍🎓 Partie Étudiant (URLs de connexion à l'API)
 🔏 Inscription : ```api/students/register``` \
 🔏 Connexion : ```api/students/login```
 
