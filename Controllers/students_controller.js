@@ -12,15 +12,15 @@ const signUp = async (req, res) => {
             return res.status(400).json({ error: 'Tous les champs sont requis' });
         }
 
-         const existingUser = await sql`
+         const existingStudentCardNumber = await sql`
           select numero_de_carte from utilisateurs where numero_de_carte = ${numero_de_carte}`;
-         const existingUser_2 = await sql`
+         const existingStudentEmail = await sql`
           select email from utilisateurs where email = ${email}`;
 
-    if (existingUser.length > 0) {
+    if (existingStudentCardNumber.length > 0) {
       return res.status(409).json({ ErrorMsg: "Utilisateur déjà existant." });
     }
-    if (existingUser_2.length > 0) {
+    if (existingStudentEmail.length > 0) {
       return res.status(409).json({ ErrorMsg: "Email déjà utilisé." });
     }
 
@@ -53,14 +53,14 @@ const Login = async (req, res) => {
             return res.status(400).json({ error: 'Tous les champs sont requis' });
         }
 
-         const existingUser = await sql`
+         const existingStudentCardNumber = await sql`
           select * from utilisateurs where numero_de_carte = ${numero_de_carte}`;
 
-    if (existingUser.length === 0) {
+    if (existingStudentCardNumber.length === 0) {
       return res.status(401).json({ ErrorMsg: "Utilisateur non existant." });
     }
 
-    const user = existingUser[0];
+    const user = existingStudentCardNumber[0];
 
      try {
       await VerifyPassword(user.mot_de_passe, mot_de_passe);
