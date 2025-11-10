@@ -44,6 +44,36 @@ Nous utilisons ***PostgreSQL*** 📑🧮  comme base de donnée pour stocker et 
 🔏 Inscription : ```api/students/register``` \
 🔏 Connexion : ```api/students/login```
 
+## 🀄🍀 Pour mettre en marche l'API (le projet)
+
+> #### 🧩 Veuillez d'abord créer un fichier ***' .env '*** dans le dossier racine du projet pour ajouter ces envs :
+```
+
+CLIENT_URL=http://127.0.0.1:5500 // URL du Front-end (Origine)
+PORT=3002 // Port Backend
+JWT_SECRET=d9515f6c68d // Token pour sécuriser la connexion (Athentification de l'utilisateur). Cependant le votre doit être long et difficile à deviner.
+DB_HOST=localhost // L'addresse de la base de donnée
+DB_USER=postgres // Le nom d'utilisateur pour acceder à Postgres
+DB_PASSWORD=********* // Le mot de passe pour acceder à Postgres
+DB_PORT=5432 // Le port par défaut de Postgres
+DB_NAME=postgres // Le nom de la base de donnée
+NODE_ENV=development // L'environnement dans lequel le projet est entrain d'être exécuté
+```
+
+> #### 🧩 Veuillez ensuite créer une table ***' utilisateurs '*** dans la base de donnée :
+
+```
+ // Dans un projet réel qui sera en production, le "public_id" sera généré automatiquement
+en utilisant des générateurs d'IDs robustes comme UUID de google ou NanoID pour des raisons de sécurité.
+
+CREATE TABLE utilisateurs (
+public_id SERIAL NOT NULL PRIMARY KEY,
+numero_de_carte INT,
+email, mot_de_passe VARCHAR(255),
+user_role VARCHAR(25)
+)
+```
+
 
 
 
